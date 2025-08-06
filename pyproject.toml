@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ask8ball"
+version = "1.0.0"
+authors = [
+  { name="Manasvi Bathula", email="manasvi.bathula@gmail.com" },
+]
+description = "A classic Magic 8-Ball for your terminal."
+license = { file = "LICENSE" } # <-- ADD THIS NEW LINE
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment",
+]
+
+[project.scripts]
+# The command is "8ball", but it points to our valid "ask8ball" package
+8ball = "ask8ball.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+# The name of the package folder to include
+packages = ["ask8ball"]
+# The package that contains the data file
+package-data = {"ask8ball" = ["*.txt"]}
