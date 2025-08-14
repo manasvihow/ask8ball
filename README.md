@@ -6,6 +6,12 @@
 Why make hard decisions when you can delegate them to the cold, hard logic of random chance?
 
 This project is a classic Magic 8 Ball that lives in your terminal. Ask it any yes-or-no question and let fate decide!
+<div style="margin-top: 12px;">
+  <img width="1377" height="491" alt="Screenshot 2025-08-14 at 1 15 17 PM" src="https://github.com/user-attachments/assets/e72c91dc-7875-41f5-a777-fb978e6fb051" />
+</div>
+
+
+
 
 ---
 
